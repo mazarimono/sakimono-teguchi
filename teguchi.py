@@ -71,6 +71,7 @@ def download(date, day_data, night_data):
 
 if __name__ == '__main__':
     f_name, monthly_urls = get_monthly_urls()
+    make_folder(f_name)
     for url in monthly_urls:
         date, day_data, night_data = get_daily_urls(url)
 
